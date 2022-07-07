@@ -1,17 +1,35 @@
-import React, { Component } from 'react'
+import React, {Component} from "react";
 
-export class Car extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {color: "red"};
-      }
-    render(){
-        return
-        <h2>I am a {this.state.color} Car!</h2>;           
-          
-        
+class Counter extends Component {
+    constructor(){
+        super();
+        this.state={
+            count: 0
+        }
+
     }
 
+    componentDidMount(){
+        console.log("ComponentDidMount : When component redner or load first time");
+    }
+
+    Increment(){
+        this.setState({ count: this.state.count+1})
+    }
+
+    Decrement(){
+        this.setState({ count: this.state.count -1})
+    }
+    render(){
+        return(
+            <div>
+                <Counter number = {this.state.count}></Counter>
+                <button onClick={()=> {this.Increment()}}>Increment</button>
+                <button onClick={()=> {this.Decrement()}}>Decrement</button>
+
+            </div>
+        )
+    }
 }
 
-export default Car;
+export default Counter;
