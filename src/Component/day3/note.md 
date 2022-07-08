@@ -1,0 +1,34 @@
+1. Differnece between Axios and Fetch ?
+
+Axios has url in request object.	
+
+Axios has the ability to intercept HTTP requests.
+
+Axios has wide browser support.	
+
+Axios uses the data property.	
+
+Axios has built-in support for download progress.
+
+Axios performs automatic transforms of JSON data.
+
+Axios’ data contains the object.	
+
+               Fetch : 
+
+Fetch has no url in request object.
+
+Fetch uses the body property.
+
+Fetch’s body has to be stringified.
+
+Fetch does not support upload progress.
+
+Fetch only supports Chrome 42+, Firefox 39+, Edge 14+, and Safari 10.1+ (This is known as Backward Compatibility).
+
+Fetch, by default, doesn’t provide a way to intercept requests.
+
+Fetch does not support upload progress.
+
+
+
