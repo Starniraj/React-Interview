@@ -4,8 +4,9 @@
 // import {BrowserRouter, Routes, Route} from 'react-router-dom'
 // import Home from './Components/day2/home'
 // import About from './Components/day2/about'
-import State from './Component/day3/State';
-import EventHandling from './Component/day3/Effect';
+// import State from './Component/day3/State';
+// import EventHandling from './Component/day3/Effect';
+import Reference from './Component//day3/UseReference';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <Route path = '*' element = {<Notfound/>}/>
       </Routes>
       </BrowserRouter> */}
-      <State/>
-      <EventHandling/>
+      <Reference/>
+      {/* <State/> */}
+      {/* <EventHandling/> */}
     </div>
   );
 }
